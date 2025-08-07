@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +35,7 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-medium' 
+        ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-medium' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6">
@@ -44,7 +45,7 @@ const Navigation = () => {
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={`text-xl font-bold transition-colors ${
-                isScrolled ? 'text-gray-800' : 'text-white'
+                isScrolled ? 'text-gray-800 dark:text-white' : 'text-white'
               }`}
             >
               Mahesh Mangali
@@ -58,12 +59,13 @@ const Navigation = () => {
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
                 className={`font-medium transition-colors hover:text-blue-600 ${
-                  isScrolled ? 'text-gray-700' : 'text-white hover:text-blue-200'
+                  isScrolled ? 'text-gray-700 dark:text-gray-300' : 'text-white hover:text-blue-200'
                 }`}
               >
                 {item.label}
               </button>
             ))}
+            <ThemeToggle />
             <Button
               size="sm"
               className={`${
@@ -84,28 +86,31 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className={`md:hidden p-2 transition-colors ${
-              isScrolled ? 'text-gray-800' : 'text-white'
-            }`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <button
+              className={`p-2 transition-colors ${
+                isScrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
+              }`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-medium rounded-lg mt-2 py-4">
+          <div className="md:hidden bg-white dark:bg-gray-800 shadow-medium rounded-lg mt-2 py-4">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                className="block w-full text-left px-6 py-3 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 transition-colors"
               >
                 {item.label}
               </button>
