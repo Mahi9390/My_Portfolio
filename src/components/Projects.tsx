@@ -10,7 +10,7 @@ const Projects = () => {
       description: "The 'Cryptocurrency Price Analysis using AI' project predicts cryptocurrency prices using machine learning algorithms, leveraging historical data and AI techniques, implemented through Django for accurate forecasting and insights.",
       icon: Brain,
       technologies: ["Python", "Django", "Random Forest", "Machine Learning", "XAMPP"],
-      github: "https://github.com/Mahi9390",
+      github: "https://github.com/Mahi9390/Cryptocurrency-Price-Analysis-using-AI",
       features: [
         "Machine learning-based price prediction",
         "Historical data analysis",
