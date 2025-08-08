@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Phone, Github, Linkedin, ExternalLink } from "lucide-react";
-import { jsPDF } from "jspdf";
+import jsPDF from "jspdf";
 const Hero = () => {
   const generateResumePDF = async () => {
     try {
