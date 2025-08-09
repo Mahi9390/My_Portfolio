@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Building } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Calendar, Building, Award } from "lucide-react";
 
 const Experience = () => {
   const internships = [
@@ -26,7 +27,8 @@ const Experience = () => {
         "Studied 6 core subjects including data cleaning and machine learning during a comprehensive internship",
         "Built a solid foundation for more advanced data science topics"
       ],
-      skills: ["Python", "Data Science", "Data Cleaning", "Machine Learning", "Dataset Analysis"]
+      skills: ["Python", "Data Science", "Data Cleaning", "Machine Learning", "Dataset Analysis"],
+      certificate: "/lovable-uploads/ff17ab1d-9f31-4ea4-a776-66fa663f4cf2.png"
     }
   ];
 
@@ -79,7 +81,7 @@ const Experience = () => {
                       ))}
                     </ul>
 
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {internship.skills.map((skill, skillIndex) => (
                         <Badge 
                           key={skillIndex} 
@@ -90,6 +92,18 @@ const Experience = () => {
                         </Badge>
                       ))}
                     </div>
+
+                    {internship.certificate && (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex items-center gap-2 hover:bg-blue-50"
+                        onClick={() => window.open(internship.certificate, '_blank')}
+                      >
+                        <Award className="w-4 h-4" />
+                        View Certificate
+                      </Button>
+                    )}
                   </div>
                 </div>
               </CardContent>
