@@ -124,7 +124,7 @@ const Contact = () => {
                   <Mail className="w-5 h-5" />
                   <div className="text-left">
                     <div className="font-semibold">Send Email</div>
-                    <div className="text-sm opacity-80">Direct message me</div>
+                    <div className="text-sm opacity-80">mmaheshmmahesh698@gmail.com</div>
                   </div>
                 </Button>
               </div>
@@ -171,7 +171,7 @@ const Contact = () => {
             onClick={() => window.open('mailto:mmaheshmmahesh698@gmail.com?subject=Data Science Opportunity', '_blank')}
           >
             <Mail className="w-5 h-5 mr-2" />
-            Start a Conversation
+            Start a Conversation - mmaheshmmahesh698@gmail.com
           </Button>
         </div>
       </div>
