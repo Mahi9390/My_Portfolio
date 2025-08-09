@@ -3,8 +3,13 @@ import { Download, Mail, Phone, Github, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const downloadResume = () => {
-    // Directly open the PDF stored in the public folder
-    window.open("/Mahesh's_Resume.pdf", "_blank");
+    // Download the resume image
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/2ec1c78a-a6b1-4fe7-af28-b0527acb9d43.png';
+    link.download = 'Mahesh_Mangali_Resume.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
