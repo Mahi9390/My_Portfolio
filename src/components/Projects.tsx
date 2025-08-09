@@ -105,13 +105,6 @@ const Projects = () => {
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button 
-                    size="sm" 
-                    className="flex items-center gap-2 bg-gradient-primary hover:opacity-90"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View Project
-                  </Button>
                 </div>
               </CardContent>
             </Card>
