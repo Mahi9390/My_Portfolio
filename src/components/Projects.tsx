@@ -23,6 +23,7 @@ const Projects = () => {
       description: "Developed a weather forecasting app using LSTM to predict future conditions from historical data. Integrated OpenWeatherMap API for real-time updates and created an interactive dashboard with Streamlit and Plotly for visual insights.",
       icon: Cloud,
       technologies: ["LSTM", "TensorFlow", "Keras", "Python", "Streamlit", "Plotly", "OpenWeatherMap API", "Scikit-learn"],
+      github: "https://github.com/Mahi9390/weather-forecast-app",
       features: [
         "LSTM neural network for time series forecasting",
         "Real-time weather data integration",
