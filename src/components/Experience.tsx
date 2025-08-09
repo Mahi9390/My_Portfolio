@@ -15,7 +15,8 @@ const Experience = () => {
         "Learned Python libraries like NumPy, Pandas, Matplotlib, and Seaborn for data analysis and visualization",
         "Gained skills in SQL, data preprocessing, exploratory data analysis, and basic machine learning concepts"
       ],
-      skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "SQL", "Data Preprocessing", "EDA"]
+      skills: ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn", "SQL", "Data Preprocessing", "EDA"],
+      certificate: "/lovable-uploads/61d7cfdc-7bf0-4ec4-a95f-08afe9616eda.png"
     },
     {
       title: "Python for Data Science",
