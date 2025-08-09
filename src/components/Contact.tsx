@@ -36,12 +36,6 @@ const Contact = () => {
       title: "GitHub",
       value: "Mahi9390",
       link: "https://github.com/Mahi9390"
-    },
-    {
-      icon: ExternalLink,
-      title: "Portfolio",
-      value: "Live Portfolio",
-      link: "https://amazing-macaron-8ef411.netlify.app/"
     }
   ];
 
@@ -167,7 +161,9 @@ const Contact = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-lg text-blue-100 mb-6">
-            Ready to start a conversation about data science opportunities?
+            Ready to start a conversation about data science opportunities? 
+            <br />
+            Email me at: <a href="mailto:mmaheshmmahesh698@gmail.com" className="text-yellow-300 hover:text-yellow-200 underline">mmaheshmmahesh698@gmail.com</a>
           </p>
           <Button 
             size="lg" 
