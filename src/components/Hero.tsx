@@ -74,6 +74,18 @@ const Hero = () => {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3"
               onClick={() =>
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
+              View Projects
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3"
+              onClick={() =>
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
                 })
