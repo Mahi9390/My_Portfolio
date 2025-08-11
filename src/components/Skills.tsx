@@ -20,8 +20,6 @@ const Skills = () => {
       skills: [
         { name: "Tableau", level: 85 },
         { name: "Power BI", level: 80 },
-        { name: "Matplotlib", level: 90 },
-        { name: "Seaborn", level: 85 },
         { name: "Plotly", level: 80 }
       ]
     },
@@ -33,7 +31,8 @@ const Skills = () => {
         { name: "NumPy", level: 85 },
         { name: "Scikit-learn", level: 80 },
         { name: "TensorFlow/Keras", level: 75 },
-        { name: "OpenCV", level: 70 }
+        { name: "Matplotlib", level: 90 },
+        { name: "Seaborn", level: 85 }
       ]
     },
     {
