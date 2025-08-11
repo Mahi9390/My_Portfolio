@@ -115,8 +115,7 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-8">Additional Tools & Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {[
-              "Django", "Streamlit", "Jupyter Notebook", "Git", "XAMPP", 
-              "Excel", "OpenWeatherMap API", "Data Mining", "EDA", 
+              "Django", "Excel", "Data Mining", "EDA", 
               "Predictive Modeling", "Time Series Analysis", "LSTM Networks"
             ].map((tool, index) => (
               <div 
