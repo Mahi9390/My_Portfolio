@@ -140,20 +140,39 @@ const Hero = () => {
           {/* Profile Picture Space */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="opacity-0 animate-fade-in-scale" style={{ animationDelay: "400ms" }}>
-              <div className="w-80 h-80 lg:w-96 lg:h-96 glass-effect rounded-3xl border-2 border-white/20 relative overflow-hidden group">
-                {/* Profile Picture */}
-                <img 
-                  src="/lovable-uploads/98f8a656-5fe4-4ef4-9e5e-fccc528fe483.png"
-                  alt="Mahesh Mangali - Data Science Graduate"
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-                
-                {/* Gradient overlay for theme integration */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-transparent to-purple-600/20 mix-blend-overlay" />
-                
-                {/* Decorative elements */}
-                <div className="absolute top-4 right-4 w-6 h-6 bg-cyan-400/30 rounded-full animate-pulse" />
-                <div className="absolute bottom-4 left-4 w-4 h-4 bg-purple-400/30 rounded-full animate-pulse" style={{ animationDelay: "1s" }} />
+              <div className="relative">
+                {/* Hexagonal frame with cyan glow */}
+                <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
+                  {/* Outer glow effect */}
+                  <div className="absolute inset-0 bg-cyan-400/30 blur-xl rounded-full animate-pulse"></div>
+                  
+                  {/* Hexagonal container */}
+                  <div className="relative w-full h-full group">
+                    {/* Hexagonal mask using clip-path */}
+                    <div 
+                      className="w-full h-full bg-gradient-to-br from-cyan-400/20 to-purple-600/20 relative overflow-hidden"
+                      style={{
+                        clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+                        filter: 'drop-shadow(0 0 20px rgba(34, 211, 238, 0.4))'
+                      }}
+                    >
+                      {/* Profile Picture */}
+                      <img 
+                        src="/lovable-uploads/98f8a656-5fe4-4ef4-9e5e-fccc528fe483.png"
+                        alt="Mahesh Mangali - Data Science Graduate"
+                        className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                      />
+                      
+                      {/* Hexagonal border */}
+                      <div 
+                        className="absolute inset-0 border-4 border-cyan-400/60"
+                        style={{
+                          clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)'
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
