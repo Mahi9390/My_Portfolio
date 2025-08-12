@@ -140,15 +140,16 @@ const Hero = () => {
           {/* Profile Picture Space */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="opacity-0 animate-fade-in-scale" style={{ animationDelay: "400ms" }}>
-              <div className="w-80 h-80 lg:w-96 lg:h-96 glass-effect rounded-3xl flex items-center justify-center border-2 border-white/20 relative overflow-hidden group">
-                {/* Placeholder for profile picture */}
-                <div className="text-center text-white/60">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">MM</span>
-                  </div>
-                  <p className="text-sm">Profile Picture</p>
-                  <p className="text-xs opacity-75 mt-1">Upload your photo here</p>
-                </div>
+              <div className="w-80 h-80 lg:w-96 lg:h-96 glass-effect rounded-3xl border-2 border-white/20 relative overflow-hidden group">
+                {/* Profile Picture */}
+                <img 
+                  src="/lovable-uploads/98f8a656-5fe4-4ef4-9e5e-fccc528fe483.png"
+                  alt="Mahesh Mangali - Data Science Graduate"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                />
+                
+                {/* Gradient overlay for theme integration */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-transparent to-purple-600/20 mix-blend-overlay" />
                 
                 {/* Decorative elements */}
                 <div className="absolute top-4 right-4 w-6 h-6 bg-cyan-400/30 rounded-full animate-pulse" />
