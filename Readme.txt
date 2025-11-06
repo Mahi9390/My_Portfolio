@@ -1,6 +1,6 @@
 # Mahesh Mangali — Data Science Portfolio
 
-[Live Portfolio ]:(https://my-portfolio-one-omega-98.vercel.app/)
+[Live Portfolio ]:(https://mahi9390.github.io/My_Portfolio/)
 
 Hi there! I’m **Mahesh Mangali**, a final-year B.Tech (Data Science) student passionate about turning data into insights. This repo is a collection of my projects, code, and learnings. I believe in building real solutions, learning by doing, and communicating clearly.
 
